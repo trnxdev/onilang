@@ -1,0 +1,25 @@
+// Define rationals for more precision when dealing with decimals
+declare a<rational>, b<rational> = 0.1, Rational.init(0.2);
+declare c, d = 0.1, 0.2;
+
+declare println = console.println;
+
+println("Rationals: ");
+println(a + b);
+println("Non Rationals: ");
+println(c + d);
+
+// If rational is used with a non-rational number,
+// the rational is casted to non-rational
+println("What are you doing?");
+println(a + d);
+
+declare i = 0;
+
+::y::
+println("Yonk:", i);
+i = i + 1;
+
+if (i != 5) {
+    goto y;
+}
