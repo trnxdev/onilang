@@ -23,3 +23,13 @@ i = i + 1;
 if (i != 5) {
     goto y;
 }
+
+declare fib = fn (n) {
+    if (n <= 1) {
+        return n;
+    }
+
+    return fib(n - 1) + fib(n - 2);
+};
+
+println("Here is a fib of 32 btw:", fib(32));
