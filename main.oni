@@ -1,4 +1,4 @@
-// Define rationals for more precision when dealing with decimals
+// Define rationals for more precision when dealing with decimals, 0.1 is converted to rational at compile-time
 declare a<rational>, b<rational> = 0.1, Rational.init(0.2);
 declare c, d = 0.1, 0.2;
 
